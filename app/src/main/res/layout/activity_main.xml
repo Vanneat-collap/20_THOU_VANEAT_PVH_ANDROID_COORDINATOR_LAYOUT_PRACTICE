@@ -19,15 +19,15 @@
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar_layout"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            app:contentScrim="@color/colorPrimary"
-            app:expandedTitleMarginStart="15dp"
-            app:expandedTitleMarginBottom="40dp"
-            app:title="Taylor Swift"
-            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
             android:theme="@style/CustomToolbarTheme"
+            app:contentScrim="@color/colorPrimary"
+            app:title="Taylor Swift"
+            app:expandedTitleMarginBottom="40dp"
+            app:expandedTitleMarginStart="15dp"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
             >
 
             <ImageView
@@ -37,8 +37,7 @@
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/talor2"
-                app:layout_collapseMode="parallax"
-                />
+                app:layout_collapseMode="parallax" />
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -46,8 +45,7 @@
                 android:layout_height="?actionBarSize"
                 android:layout_marginBottom="20dp"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
-                />
+                app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
@@ -58,23 +56,197 @@
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
 
-            <Button
-                android:id="@+id/btn1"
-                android:layout_width="390dp"
-                android:layout_centerHorizontal="true"
-                android:layout_height="65dp"
-                android:backgroundTint="@color/colorPrimaryBtn"
-                android:text="Saved Message"
-                android:textSize="20sp"
-                android:layout_marginTop="35dp"
-                />
+               <TextView
+                   android:id="@+id/text1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="15dp"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/round_btn"
+                   android:drawableLeft="@drawable/baseline_save_as_24"
+                   android:text="Save Message"
+                   android:gravity="center"
+                   android:textColor="@color/white"
+                   android:textSize="23sp"
+                   />
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:text="Save Message"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableLeft="@drawable/baseline_save_as_24"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Save Message"
+                    android:textColor="@color/white"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 
